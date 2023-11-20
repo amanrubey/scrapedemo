@@ -111,7 +111,7 @@ app.get("/do", async (req, res) => {
     catch(err)
     {
         console.log(err);
-        res.send("error");
+        res.send(err);
     }
 });
 
