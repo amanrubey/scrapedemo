@@ -72,7 +72,7 @@ async function snapdeal(p_names, prices, reviews, desc, urls, trs)
 app.get("/", (req,res)=>{
     res.render("./index.ejs");
 })
-app.get("/do", async (req, res) => {
+app.post("/do", async (req, res) => {
     try{
     let title = req.query.title;
     let filter = req.query.filter;
